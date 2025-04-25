@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Pais</title>
+</head>
+<body>
+    Verificador de Pais <input type="text" name="pais" id="pais">:
+    <input type="button" value="verificar" onclick="Pais()">
+    <div id="pao">
+
+    </div>
+
+    <script>
+        function Pais() {
+        var verifica = window.document.querySelector('input#pais').value
+        var aidi = window.document.getElementById('pao')
+        if (verifica == 'Brasil') {
+            aidi.innerHTML = `Voce é Brasileiro`
+        } else {
+            aidi.innerHTML = `Voce é Estrangeiro`
+        }
+        
+        }
+
+    </script>
+</body>
+</html>
